@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2026-02-01T21:38:44.909907" rpa="false" schemaversion="5">
+<suite id="s1" name="Creer Element De Liste Agenda" source="c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsRobot\Scripts\Creer_Element_De_Liste_Agenda.robot">
+<test id="s1-t1" name="TC1" line="22">
+<kw name="Login" owner="Login_Logout_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:45.227129" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8082'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-01T21:38:45.226603" elapsed="2.840240"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-01T21:38:51.068798" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-01T21:38:48.067427" elapsed="3.002510"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-01T21:38:51.071219" elapsed="0.065479"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:51.137653" level="INFO">Typing text '6366435' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<arg>${input_Username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:51.137058" elapsed="0.094960"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:51.232796" level="INFO">Typing text '6366435' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<arg>${input_Password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:51.232355" elapsed="0.098659"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:51.331607" level="INFO">Clicking element '//button[contains(text(), 'Connexion')]'.</msg>
+<arg>${btn_Submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:51.331298" elapsed="0.555597"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-01T21:38:54.889743" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-01T21:38:51.888027" elapsed="3.002722"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:54.917440" level="INFO">Page title is 'Alfresco » Tableau de bord utilisateur'.</msg>
+<arg>Alfresco » Tableau de bord utilisateur</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-01T21:38:54.891735" elapsed="0.026708"/>
+</kw>
+<arg>${vURL}</arg>
+<arg>${vBROWSER}</arg>
+<arg>${vUser}</arg>
+<arg>${VPassword}</arg>
+<status status="PASS" start="2026-02-01T21:38:45.225169" elapsed="9.694161"/>
+</kw>
+<kw name="Creer un site" owner="Creer_Site_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:54.927544" level="INFO">Clicking element '//span[@id='HEADER_SITES_MENU_text']'.</msg>
+<arg>${MENU_SITES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:54.925349" elapsed="0.211400"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ITEM_CREER_SITE}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T21:38:55.137397" elapsed="0.306163"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:55.446796" level="INFO">Clicking element '//td[@id='HEADER_SITES_MENU_CREATE_SITE_text']'.</msg>
+<arg>${ITEM_CREER_SITE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:55.445166" elapsed="0.305904"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIELD_NOM_SITE}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T21:38:55.751571" elapsed="0.055213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:55.807585" level="INFO">Typing text 'AtikaSite6' into text field '//input[@name='title']'.</msg>
+<arg>${FIELD_NOM_SITE}</arg>
+<arg>${vNom_Site}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:55.807129" elapsed="0.127089"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:55.935477" level="INFO">Typing text 'AtikaSite6' into text field '//input[@name='shortName' and @type='text']'.</msg>
+<arg>${FIELD_URL_SITE}</arg>
+<arg>${vNom_Site}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:55.934726" elapsed="0.178210"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:56.113788" level="INFO">Typing text 'Description de mon site' into text field '//textarea[@name='description']'.</msg>
+<arg>${FIELD_DESC_SITE}</arg>
+<arg>${vDescription_Site}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:56.113323" elapsed="0.142971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:56.257140" level="INFO">Clicking element '//input[@id='CREATE_SITE_FIELD_VISIBILITY_CONTROL_OPTION0_BUTTON']'.</msg>
+<arg>${RADIO_PUBLIC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:56.256721" elapsed="0.132209"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_CREER_SITE}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T21:38:56.389248" elapsed="0.053429"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:56.445013" level="INFO">Clicking element '//span[@id='CREATE_SITE_DIALOG_OK_label'and text()='Créer']'.</msg>
+<arg>${BTN_CREER_SITE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:56.443745" elapsed="0.159490"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${vNom_Site}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-01T21:38:56.603915" elapsed="2.028362"/>
+</kw>
+<arg>${vNom_Site}</arg>
+<arg>${vDescription_Site}</arg>
+<status status="PASS" start="2026-02-01T21:38:54.922425" elapsed="3.710245"/>
+</kw>
+<kw name="Ajouter une liste de données" owner="Ajouter_Liste_Donnees_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:58.636033" level="INFO">Clicking element '//span[@id='HEADER_SITES_MENU_text']'.</msg>
+<arg>${MENU_SITES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:58.635218" elapsed="0.073262"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:58.709091" level="INFO">Clicking element '//a[text()='AtikaSite6']'.</msg>
+<arg>${NomSite1}${vNom_Site}${NomSite2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:58.708746" elapsed="0.773582"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NomSite1}${vNom_Site}${NomSite2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-01T21:38:59.482660" elapsed="0.016749"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:59.500477" level="INFO">Clicking element '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']'.</msg>
+<arg>${Roue_Donte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-01T21:38:59.499965" elapsed="0.067547"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-01T21:38:59.568106" level="INFO">Clicking element '//tr[@id='HEADER_CUSTOMIZE_SITE_text']/a'.</msg>
+<msg time="2026-02-01T21:38:59.717941" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-01T21:38:59.718422" level="FAIL">Element with locator '//tr[@id='HEADER_CUSTOMIZE_SITE_text']/a' not found.</msg>
+<arg>${Link_Personnaliser}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-01T21:38:59.567788" elapsed="0.165347">Element with locator '//tr[@id='HEADER_CUSTOMIZE_SITE_text']/a' not found.</status>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${link_Liste_Donnee}</arg>
+<arg>${Page_actuel}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="NOT RUN" start="2026-02-01T21:38:59.733510" elapsed="0.000160"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${btn_OK_List}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-01T21:38:59.733887" elapsed="0.000117"/>
+</kw>
+<arg>${vNom_Site}</arg>
+<status status="FAIL" start="2026-02-01T21:38:58.633593" elapsed="1.100680">Element with locator '//tr[@id='HEADER_CUSTOMIZE_SITE_text']/a' not found.</status>
+</kw>
+<kw name="Creer_une_nouvelle_liste_de_donnee" owner="Creer_Nouvelle_Liste_keywords">
+<arg>${vNom_Site}</arg>
+<arg>${vNomListe}</arg>
+<arg>${typeDeListeV}</arg>
+<arg>${Description}</arg>
+<status status="NOT RUN" start="2026-02-01T21:38:59.735110" elapsed="0.000327"/>
+</kw>
+<status status="FAIL" start="2026-02-01T21:38:45.224108" elapsed="14.512127">Element with locator '//tr[@id='HEADER_CUSTOMIZE_SITE_text']/a' not found.</status>
+</test>
+<status status="FAIL" start="2026-02-01T21:38:44.914109" elapsed="14.823695"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Creer Element De Liste Agenda" id="s1" pass="0" fail="1" skip="0">Creer Element De Liste Agenda</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-01T21:38:45.207927" level="ERROR">Error in file 'c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsRobot\Ressources\Keywords\Creer_Site_keywords.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  C:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Program Files\Python313\python313.zip
+  C:\Program Files\Python313\DLLs
+  C:\Program Files\Python313\Lib
+  C:\Program Files\Python313
+  C:\Users\GB-TECH\AppData\Roaming\Python\Python313\site-packages
+  C:\Program Files\Python313\Lib\site-packages</msg>
+<msg time="2026-02-01T21:38:45.214914" level="ERROR">Error in file 'c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsRobot\Ressources\Keywords\Ajouter_Liste_Donnees_keywords.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  C:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Program Files\Python313\python313.zip
+  C:\Program Files\Python313\DLLs
+  C:\Program Files\Python313\Lib
+  C:\Program Files\Python313
+  C:\Users\GB-TECH\AppData\Roaming\Python\Python313\site-packages
+  C:\Program Files\Python313\Lib\site-packages</msg>
+<msg time="2026-02-01T21:38:45.221514" level="ERROR">Error in file 'c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsRobot\Ressources\Keywords\Creer_Nouvelle_Liste_keywords.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  C:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\GB-TECH\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Program Files\Python313\python313.zip
+  C:\Program Files\Python313\DLLs
+  C:\Program Files\Python313\Lib
+  C:\Program Files\Python313
+  C:\Users\GB-TECH\AppData\Roaming\Python\Python313\site-packages
+  C:\Program Files\Python313\Lib\site-packages</msg>
+</errors>
+</robot>

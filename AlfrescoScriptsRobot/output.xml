@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-10-01T10:51:54.102797" rpa="false" schemaversion="5">
+<suite id="s1" name="Dupliquer element" source="c:\Users\radou\OneDrive\Bureau\AlfrescoScripts\Scripts\Dupliquer_element.robot">
+<test id="s1-t1" name="TC" line="19">
+<kw name="Login" owner="Login_Logout_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:51:55.329259" level="INFO">Opening browser 'chrome' to base url 'https://35.188.55.52/share/page/'.</msg>
+<msg time="2025-10-01T10:51:55.817378" level="WARN">The chromedriver version (139.0.7258.138) detected in PATH at C:\Program Files\Python313\Scripts\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.208); currently, chromedriver 140.0.7339.207 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-01T10:51:55.328610" elapsed="2.154888"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-01T10:52:00.485128" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-01T10:51:57.484123" elapsed="3.001433"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-01T10:52:00.485926" elapsed="0.844622"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:01.332429" level="INFO">Typing text 'adminEquipe3' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-username']'.</msg>
+<arg>${input_Username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:01.331165" elapsed="0.140878"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:01.473482" level="INFO">Typing text '123456789' into text field '//input[@id='page_x002e_components_x002e_slingshot-login_x0023_default-password']'.</msg>
+<arg>${input_Password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:01.472762" elapsed="0.116001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:01.590043" level="INFO">Clicking element '//button[contains(text(), 'Connexion')]'.</msg>
+<arg>${btn_Submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:01.589293" elapsed="0.082325"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-01T10:52:04.673223" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-01T10:52:01.672130" elapsed="3.001501"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:04.682917" level="INFO">Page title is 'Alfresco » Tableau de bord utilisateur'.</msg>
+<arg>Alfresco » Tableau de bord utilisateur</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-10-01T10:52:04.674048" elapsed="0.009217"/>
+</kw>
+<arg>${vURL}</arg>
+<arg>${vBROWSER}</arg>
+<arg>${vUser}</arg>
+<arg>${VPassword}</arg>
+<status status="PASS" start="2025-10-01T10:51:55.326152" elapsed="9.357430"/>
+</kw>
+<kw name="Creer un site" owner="Creer_Site_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:04.685724" level="INFO">Clicking element '//span[@id='HEADER_SITES_MENU_text']'.</msg>
+<arg>${MENU_SITES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:04.685229" elapsed="0.095198"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ITEM_CREER_SITE}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-01T10:52:04.780955" elapsed="0.431338"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:05.213257" level="INFO">Clicking element '//td[@id='HEADER_SITES_MENU_CREATE_SITE_text']'.</msg>
+<arg>${ITEM_CREER_SITE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:05.212803" elapsed="0.288524"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIELD_NOM_SITE}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-01T10:52:05.501721" elapsed="0.048982"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:05.551857" level="INFO">Typing text 'AtikaSite6' into text field '//input[@name='title']'.</msg>
+<arg>${FIELD_NOM_SITE}</arg>
+<arg>${vNom_Site}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:05.551267" elapsed="0.249204"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:05.801554" level="INFO">Typing text 'AtikaSite6' into text field '//input[@name='shortName' and @type='text']'.</msg>
+<arg>${FIELD_URL_SITE}</arg>
+<arg>${vNom_Site}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:05.800990" elapsed="0.326484"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:06.128406" level="INFO">Typing text 'Description de mon site' into text field '//textarea[@name='description']'.</msg>
+<arg>${FIELD_DESC_SITE}</arg>
+<arg>${vDescription_Site}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:06.127959" elapsed="0.202637"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:06.331451" level="INFO">Clicking element '//input[@id='CREATE_SITE_FIELD_VISIBILITY_CONTROL_OPTION0_BUTTON']'.</msg>
+<arg>${RADIO_PUBLIC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:06.331044" elapsed="0.256037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_CREER_SITE}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-01T10:52:06.587517" elapsed="0.023412"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:06.611677" level="INFO">Clicking element '//span[@id='CREATE_SITE_DIALOG_OK_label'and text()='Créer']'.</msg>
+<arg>${BTN_CREER_SITE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:06.611344" elapsed="0.265778"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${vNom_Site}</arg>
+<arg>${SEL_TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-01T10:52:06.877752" elapsed="1.470419"/>
+</kw>
+<arg>${vNom_Site}</arg>
+<arg>${vDescription_Site}</arg>
+<status status="PASS" start="2025-10-01T10:52:04.684313" elapsed="3.664265"/>
+</kw>
+<kw name="Ajouter une liste de données" owner="Ajouter_Liste_Donnees_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:08.350661" level="INFO">Clicking element '//span[@id='HEADER_SITES_MENU_text']'.</msg>
+<arg>${MENU_SITES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:08.350352" elapsed="0.117727"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:08.469027" level="INFO">Clicking element '//a[text()='AtikaSite6']'.</msg>
+<arg>${NomSite1}${vNom_Site}${NomSite2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T10:52:08.468515" elapsed="0.102880"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NomSite1}${vNom_Site}${NomSite2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-01T10:52:08.572122" elapsed="0.123831"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:52:08.696702" level="INFO">Clicking element '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']'.</msg>
+<msg time="2025-10-01T10:52:09.222473" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-01T10:52:09.223140" level="FAIL">Element with locator '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']' not found.</msg>
+<arg>${Roue_Donte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-10-01T10:52:08.696298" elapsed="0.626084">Element with locator '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Link_Personnaliser}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-01T10:52:09.322844" elapsed="0.000150"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${link_Liste_Donnee}</arg>
+<arg>${Page_actuel}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="NOT RUN" start="2025-10-01T10:52:09.323179" elapsed="0.000108"/>
+</kw>
+<arg>${vNom_Site}</arg>
+<status status="FAIL" start="2025-10-01T10:52:08.349284" elapsed="0.974210">Element with locator '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']' not found.</status>
+</kw>
+<kw name="Dupliquer plusieurs element" owner="Dupliquer_element_keywords">
+<arg>${nomSite}</arg>
+<arg>${vNomListe}</arg>
+<arg>${vNomElementListe}</arg>
+<status status="NOT RUN" start="2025-10-01T10:52:09.324069" elapsed="0.000172"/>
+</kw>
+<status status="FAIL" start="2025-10-01T10:51:55.325064" elapsed="13.999726">Element with locator '//div[@id='HEADER_SITE_CONFIGURATION_DROPDOWN']' not found.</status>
+</test>
+<status status="FAIL" start="2025-10-01T10:51:54.114096" elapsed="15.212076"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Dupliquer element" id="s1" pass="0" fail="1" skip="0">Dupliquer element</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-01T10:51:55.817378" level="WARN">The chromedriver version (139.0.7258.138) detected in PATH at C:\Program Files\Python313\Scripts\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.208); currently, chromedriver 140.0.7339.207 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
