@@ -337,3 +337,7 @@ Upgrade plan is generated successfully and saved at "c:\Users\GB-TECH\Downloads\
 2026-02-02T19:59:34.277Z [INFO] [Task.complete](10): Completing task setupEnvironment
 2026-02-02T19:59:34.279Z [INFO] ----------------------invoked setup_upgrade_environment----------------------
 2026-02-02T19:59:34.280Z [INFO] [Task.complete](10): Completed task setupEnvironment
+2026-02-02T20:07:09.438Z [ERROR] [Tool.invoke] error occurs when invoking tool setup_upgrade_environment: ValidationError: Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take..
+2026-02-02T20:07:09.440Z [INFO] [Task.complete](15): Completing task setupEnvironment
+2026-02-02T20:07:09.442Z [INFO] ----------------------invoked setup_upgrade_environment----------------------
+2026-02-02T20:07:09.443Z [INFO] [Task.complete](15): Completed task setupEnvironment

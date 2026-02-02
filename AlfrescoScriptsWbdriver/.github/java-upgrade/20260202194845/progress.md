@@ -85,3 +85,53 @@
   #### Errors
   - Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take.
   </details>
+
+  ### ❗ Setup Development Environment
+  - [[View Log]](logs\11.setupEnvironment.log)
+  
+  <details>
+      <summary>[ click to toggle details ]</summary>
+  
+  #### Errors
+  - Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take.
+  </details>
+
+  ### ❗ Setup Development Environment
+  - [[View Log]](logs\12.setupEnvironment.log)
+  
+  <details>
+      <summary>[ click to toggle details ]</summary>
+  
+  #### Errors
+  - Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take.
+  </details>
+
+  ### ❗ Setup Development Environment
+  - [[View Log]](logs\13.setupEnvironment.log)
+  
+  <details>
+      <summary>[ click to toggle details ]</summary>
+  
+  #### Errors
+  - Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take.
+  </details>
+
+  ### ❗ Setup Development Environment
+  - [[View Log]](logs\14.setupEnvironment.log)
+  
+  <details>
+      <summary>[ click to toggle details ]</summary>
+  
+  #### Errors
+  - Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take.
+  </details>
+
+  ### ❗ Setup Development Environment
+  - [[View Log]](logs\15.setupEnvironment.log)
+  
+  <details>
+      <summary>[ click to toggle details ]</summary>
+  
+  #### Errors
+  - Uncommitted changes found, please stash, commit or discard them first. You'd better let the user to choose the action to take.
+  </details>
