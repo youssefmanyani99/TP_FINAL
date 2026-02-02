@@ -1,0 +1,225 @@
+2026-02-02T03:04:07.600Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-02-02T03:04:07.600Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.seleniumhq.selenium:selenium-java:4.25.0",
+    "org.seleniumhq.selenium:selenium-server:4.25.0",
+    "org.testng:testng:7.9.0",
+    "org.junit.jupiter:junit-jupiter:5.10.2",
+    "org.junit.jupiter:junit-jupiter-engine:5.10.2",
+    "ch.qos.logback:logback-classic:1.5.12",
+    "org.apache.logging.log4j:log4j-core:2.25.3",
+    "org.jdom:jdom2:2.0.6.1",
+    "com.fasterxml.jackson.core:jackson-databind:2.17.2",
+    "org.apache.poi:poi:5.4.0",
+    "org.apache.poi:poi-ooxml:5.4.0",
+    "org.apache.poi:poi-ooxml-schemas:4.1.2"
+  ],
+  "projectPath": "c:\\Users\\GB-TECH\\Downloads\\20251016232705_TPFinal (1)\\TPFinal\\AlfrescoScriptsWbdriver"
+}}).
+2026-02-02T03:04:07.606Z [INFO] [Task.start](): Starting task toolCall
+2026-02-02T03:04:07.607Z [INFO] [Task.start](): Started task toolCall
+2026-02-02T03:04:07.607Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-02-02T03:04:07.608Z [INFO] [Tool.invoke] do pre-invoke.
+2026-02-02T03:04:07.608Z [INFO] Project c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver is a maven project, try to get java version from pom.xml
+2026-02-02T03:04:07.609Z [INFO] Project java version: 17
+2026-02-02T03:04:07.610Z [INFO] Maven project detected.
+2026-02-02T03:04:07.610Z [INFO] Build tool type: mvn
+2026-02-02T03:04:07.712Z [INFO] [Environment] Running command (Java 17): java -version
+java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+2026-02-02T03:04:07.960Z [INFO] [JdkEnvironment] Got real Java version: 17.0.12
+2026-02-02T03:04:07.961Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+  "version": "17"
+}
+2026-02-02T03:04:07.978Z [INFO] [Environment] Running command (Java 17): mvn --version
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: C:\Program Files\maven\apache-maven-3.9.11
+Java version: 17.0.12, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-17
+Default locale: fr_FR, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-02T03:04:08.856Z [INFO] Real build tool version: 3.9.11
+2026-02-02T03:04:08.857Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\maven\\apache-maven-3.9.11\\bin",
+  "version": "3.9.11"
+}
+2026-02-02T03:04:08.857Z [INFO] Project config: {
+  "name": "AlfrescoScriptsWbdriver",
+  "dir": "c:\\Users\\GB-TECH\\Downloads\\20251016232705_TPFinal (1)\\TPFinal\\AlfrescoScriptsWbdriver",
+  "jdk": {
+    "name": "java",
+    "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+    "version": "17"
+  },
+  "buildTool": {
+    "name": "mvn",
+    "path": "C:\\Program Files\\maven\\apache-maven-3.9.11\\bin",
+    "version": "3.9.11"
+  }
+}
+2026-02-02T03:04:08.869Z [INFO] [Tool.invoke] do invoke.
+2026-02-02T03:04:08.869Z [INFO] [Project AlfrescoScriptsWbdriver]: getting dependencies promise.
+2026-02-02T03:04:08.870Z [INFO] [Project AlfrescoScriptsWbdriver]: reset dependencies promise.
+2026-02-02T03:04:08.870Z [INFO] [Environment] Running command (Java 17): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.example:CH05_Webdriver_Java_3 >------------------
+[INFO] Building CH05_Webdriver_Java_3 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.seleniumhq.selenium:selenium-server:jar:4.25.0 is missing, no dependency information available
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ CH05_Webdriver_Java_3 ---
+[INFO] org.example:CH05_Webdriver_Java_3:jar:1.0-SNAPSHOT
+[INFO] +- org.seleniumhq.selenium:selenium-java:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-api:jar:4.25.0:compile
+[INFO] |  |  \- org.jspecify:jspecify:jar:1.0.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-chrome-driver:jar:4.25.0:compile
+[INFO] |  |  +- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-chromium-driver:jar:4.25.0:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-json:jar:4.25.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-manager:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v127:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v128:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v129:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v85:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-edge-driver:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-firefox-driver:jar:4.25.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-http:jar:4.25.0:compile
+[INFO] |  |     \- dev.failsafe:failsafe:jar:3.3.2:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-ie-driver:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-remote-driver:jar:4.25.0:compile
+[INFO] |  |  +- com.google.guava:guava:jar:33.3.0-jre:compile
+[INFO] |  |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  |  +- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  |  |  \- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |  |  +- io.opentelemetry.semconv:opentelemetry-semconv:jar:1.25.0-alpha:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-api:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-context:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-exporter-logging:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-common:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:jar:1.42.1:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-api-incubator:jar:1.42.1-alpha:runtime
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-trace:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk:jar:1.42.1:compile
+[INFO] |  |  |  +- io.opentelemetry:opentelemetry-sdk-metrics:jar:1.42.1:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-sdk-logs:jar:1.42.1:compile
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.15.1:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-os:jar:4.25.0:compile
+[INFO] |  |     \- org.apache.commons:commons-exec:jar:1.4.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-safari-driver:jar:4.25.0:compile
+[INFO] |  \- org.seleniumhq.selenium:selenium-support:jar:4.25.0:compile
+[INFO] +- org.seleniumhq.selenium:selenium-server:jar:4.25.0:compile
+[INFO] +- org.testng:testng:jar:7.9.0:test
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- com.beust:jcommander:jar:1.82:test
+[INFO] |  \- org.webjars:jquery:jar:3.7.1:test
+[INFO] +- org.junit.jupiter:junit-jupiter:jar:5.10.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter-api:jar:5.10.2:test
+[INFO] |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  \- org.junit.platform:junit-platform-commons:jar:1.10.2:test
+[INFO] |  \- org.junit.jupiter:junit-jupiter-params:jar:5.10.2:test
+[INFO] +- org.junit.jupiter:junit-jupiter-engine:jar:5.10.2:test
+[INFO] |  +- org.junit.platform:junit-platform-engine:jar:1.10.2:test
+[INFO] |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.5.12:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.5.12:compile
+[INFO] +- org.apache.logging.log4j:log4j-core:jar:2.25.3:compile
+[INFO] |  \- org.apache.logging.log4j:log4j-api:jar:2.25.3:compile
+[INFO] +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.17.2:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.17.2:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.17.2:compile
+[INFO] +- org.apache.poi:poi:jar:5.4.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.6.1:compile
+[INFO] |  +- commons-io:commons-io:jar:2.18.0:compile
+[INFO] |  \- com.zaxxer:SparseBitSet:jar:1.3:compile
+[INFO] +- org.apache.poi:poi-ooxml:jar:5.4.0:compile
+[INFO] |  +- org.apache.poi:poi-ooxml-lite:jar:5.4.0:compile
+[INFO] |  +- org.apache.xmlbeans:xmlbeans:jar:5.3.0:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.27.1:compile
+[INFO] |  |  \- org.apache.commons:commons-lang3:jar:3.16.0:compile
+[INFO] |  \- com.github.virtuald:curvesapi:jar:1.08:compile
+[INFO] \- org.apache.poi:poi-ooxml-schemas:jar:4.1.2:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.667 s
+[INFO] Finished at: 2026-02-01T22:04:17-05:00
+[INFO] ------------------------------------------------------------------------
+2026-02-02T03:04:17.520Z [INFO] [MavenBuildTool] Successfully got dependency tree of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T03:04:17.521Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver from pom.xml
+2026-02-02T03:04:17.521Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T03:04:17.522Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T03:04:17.522Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T03:04:17.523Z [INFO] [Environment] Running command (Java 17): mvn help:effective-pom -Doutput=effective-pom-23514cf0-5155-42c8-8575-4474510e2c6d.log
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.example:CH05_Webdriver_Java_3 >------------------
+[INFO] Building CH05_Webdriver_Java_3 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ CH05_Webdriver_Java_3 ---
+[INFO] Effective-POM written to: c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\effective-pom-23514cf0-5155-42c8-8575-4474510e2c6d.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.504 s
+[INFO] Finished at: 2026-02-01T22:04:21-05:00
+[INFO] ------------------------------------------------------------------------
+2026-02-02T03:04:21.889Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\pom.xml
+2026-02-02T03:04:21.890Z [INFO] [MavenBuildTool] Java version found in c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\pom.xml: 17
+2026-02-02T03:04:21.905Z [INFO] Getting CVEs for dependencies: org.seleniumhq.selenium:selenium-java:4.25.0,org.seleniumhq.selenium:selenium-server:4.25.0,org.testng:testng:7.9.0,org.junit.jupiter:junit-jupiter:5.10.2,org.junit.jupiter:junit-jupiter-engine:5.10.2,ch.qos.logback:logback-classic:1.5.12,org.apache.logging.log4j:log4j-core:2.25.3,org.jdom:jdom2:2.0.6.1,com.fasterxml.jackson.core:jackson-databind:2.17.2,org.apache.poi:poi:5.4.0,org.apache.poi:poi-ooxml:5.4.0,org.apache.poi:poi-ooxml-schemas:4.1.2
+2026-02-02T03:04:21.906Z [INFO] getting CVEs for dependencies:
+ - org.seleniumhq.selenium:selenium-java:4.25.0
+  - org.seleniumhq.selenium:selenium-server:4.25.0
+  - org.testng:testng:7.9.0
+  - org.junit.jupiter:junit-jupiter:5.10.2
+  - org.junit.jupiter:junit-jupiter-engine:5.10.2
+  - ch.qos.logback:logback-classic:1.5.12
+  - org.apache.logging.log4j:log4j-core:2.25.3
+  - org.jdom:jdom2:2.0.6.1
+  - com.fasterxml.jackson.core:jackson-databind:2.17.2
+  - org.apache.poi:poi:5.4.0
+  - org.apache.poi:poi-ooxml:5.4.0
+  - org.apache.poi:poi-ooxml-schemas:4.1.2...
+2026-02-02T03:04:21.906Z [INFO] getting gitHub access token...
+2026-02-02T03:04:21.909Z [INFO] Processing batch 1/1, size: 12
+2026-02-02T03:04:21.910Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.seleniumhq.selenium:selenium-java:4.25.0",
+  "org.seleniumhq.selenium:selenium-server:4.25.0",
+  "org.testng:testng:7.9.0",
+  "org.junit.jupiter:junit-jupiter:5.10.2",
+  "org.junit.jupiter:junit-jupiter-engine:5.10.2",
+  "ch.qos.logback:logback-classic:1.5.12",
+  "org.apache.logging.log4j:log4j-core:2.25.3",
+  "org.jdom:jdom2:2.0.6.1",
+  "com.fasterxml.jackson.core:jackson-databind:2.17.2",
+  "org.apache.poi:poi:5.4.0",
+  "org.apache.poi:poi-ooxml:5.4.0",
+  "org.apache.poi:poi-ooxml-schemas:4.1.2"
+]
+2026-02-02T03:04:22.387Z [INFO] Fetched 0 total advisories across all pages
+2026-02-02T03:04:22.387Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-02-02T03:04:22.388Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-02-02T03:04:22.388Z [INFO] calculating patched version by dep...
+2026-02-02T03:04:22.388Z [INFO] finished getting CVEs for dependencies.
+2026-02-02T03:04:22.389Z [INFO] Found 0 dependencies with known CVEs
+2026-02-02T03:04:22.389Z [INFO] No known CVEs found for dependencies: org.seleniumhq.selenium:selenium-java:4.25.0,org.seleniumhq.selenium:selenium-server:4.25.0,org.testng:testng:7.9.0,org.junit.jupiter:junit-jupiter:5.10.2,org.junit.jupiter:junit-jupiter-engine:5.10.2,ch.qos.logback:logback-classic:1.5.12,org.apache.logging.log4j:log4j-core:2.25.3,org.jdom:jdom2:2.0.6.1,com.fasterxml.jackson.core:jackson-databind:2.17.2,org.apache.poi:poi:5.4.0,org.apache.poi:poi-ooxml:5.4.0,org.apache.poi:poi-ooxml-schemas:4.1.2
+2026-02-02T03:04:22.390Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs found for the given dependencies."
+}}).
+2026-02-02T03:04:22.390Z [INFO] [Task.complete](): Completing task toolCall
+2026-02-02T03:04:22.391Z [INFO] [Task.complete](): Completed task toolCall
+2026-02-02T03:04:22.392Z [INFO] [Tool.invoke]({message: No known CVEs found for the given dependencies.}).
+2026-02-02T03:04:22.392Z [INFO] ----------------------invoked validate_cves_for_java----------------------

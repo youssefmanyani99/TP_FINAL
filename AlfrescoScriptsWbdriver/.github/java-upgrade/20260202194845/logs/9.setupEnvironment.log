@@ -1,0 +1,359 @@
+2026-02-02T19:56:41.994Z [INFO] validate plan and setup env from plan.md file...
+2026-02-02T19:56:41.995Z [INFO] parsing plan.md...
+2026-02-02T19:56:44.229Z [INFO] Successfully parsed plan.md to JSON:
+2026-02-02T19:56:44.230Z [INFO] {
+  "projectConfig": {
+    "name": "AlfrescoScriptsWbdriver",
+    "dir": "c:\\Users\\GB-TECH\\Downloads\\20251016232705_TPFinal (1)\\TPFinal\\AlfrescoScriptsWbdriver",
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+      "version": "17"
+    },
+    "buildTool": {
+      "name": "mvn",
+      "path": "C:\\Program Files\\maven\\apache-maven-3.9.11\\bin",
+      "version": "",
+      "defaultOptions": ""
+    }
+  },
+  "upgradeOptions": {
+    "target": {
+      "javaVersion": "21",
+      "dependencies": [],
+      "jdk": {
+        "name": "java",
+        "path": "C:\\Users\\GB-TECH\\.jdk\\jdk-21.0.8\\bin",
+        "version": "21"
+      }
+    },
+    "guidelines": "",
+    "workingBranch": "appmod/java-upgrade-20260202194845",
+    "runTests": true
+  }
+}
+2026-02-02T19:56:44.236Z [INFO] Project c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver is a maven project, try to get java version from pom.xml
+2026-02-02T19:56:44.238Z [INFO] Project java version: 17
+2026-02-02T19:56:44.239Z [INFO] Build tool type: mvn
+2026-02-02T19:56:44.240Z [INFO] [Environment] Running command (Java 17): java -version
+java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+2026-02-02T19:56:44.357Z [INFO] [JdkEnvironment] Got real Java version: 17.0.12
+2026-02-02T19:56:44.357Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+  "version": "17"
+}
+2026-02-02T19:56:44.361Z [INFO] [Environment] Running command (Java 17): mvn --version
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: C:\Program Files\maven\apache-maven-3.9.11
+Java version: 17.0.12, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-17
+Default locale: fr_FR, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-02T19:56:44.864Z [INFO] Real build tool version: 3.9.11
+2026-02-02T19:56:44.865Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\maven\\apache-maven-3.9.11\\bin",
+  "version": "3.9.11"
+}
+2026-02-02T19:56:44.865Z [INFO] Project config: {
+  "name": "AlfrescoScriptsWbdriver",
+  "dir": "c:\\Users\\GB-TECH\\Downloads\\20251016232705_TPFinal (1)\\TPFinal\\AlfrescoScriptsWbdriver",
+  "jdk": {
+    "name": "java",
+    "path": "C:\\Program Files\\Java\\jdk-17\\bin",
+    "version": "17"
+  },
+  "buildTool": {
+    "name": "mvn",
+    "path": "C:\\Program Files\\maven\\apache-maven-3.9.11\\bin",
+    "version": "3.9.11",
+    "defaultOptions": ""
+  }
+}
+2026-02-02T19:56:44.866Z [INFO] [Project AlfrescoScriptsWbdriver]: getting Java version.
+2026-02-02T19:56:44.866Z [INFO] [Project AlfrescoScriptsWbdriver]: reset Java version promise.
+2026-02-02T19:56:44.866Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver from pom.xml
+2026-02-02T19:56:44.867Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T19:56:44.867Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T19:56:44.867Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T19:56:44.872Z [INFO] [Environment] Running command (Java 17): mvn help:effective-pom -Doutput=effective-pom-7140e215-6d0a-498f-93a4-a5813d489d40.log
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.example:CH05_Webdriver_Java_3 >------------------
+[INFO] Building CH05_Webdriver_Java_3 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ CH05_Webdriver_Java_3 ---
+[INFO] Effective-POM written to: c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\effective-pom-7140e215-6d0a-498f-93a4-a5813d489d40.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.640 s
+[INFO] Finished at: 2026-02-02T14:56:50-05:00
+[INFO] ------------------------------------------------------------------------
+2026-02-02T19:56:51.035Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\pom.xml
+2026-02-02T19:56:51.037Z [INFO] [MavenBuildTool] Java version found in c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\pom.xml: 17
+2026-02-02T19:56:51.037Z [INFO] [Project AlfrescoScriptsWbdriver]: got Java version: 17
+2026-02-02T19:56:51.038Z [INFO] Source Java version: 17
+2026-02-02T19:56:51.039Z [INFO] [Project AlfrescoScriptsWbdriver]: getting dependencies promise.
+2026-02-02T19:56:51.040Z [INFO] [Project AlfrescoScriptsWbdriver]: reset dependencies promise.
+2026-02-02T19:56:51.041Z [INFO] [Environment] Running command (Java 17): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.example:CH05_Webdriver_Java_3 >------------------
+[INFO] Building CH05_Webdriver_Java_3 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.seleniumhq.selenium:selenium-server:jar:4.25.0 is missing, no dependency information available
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ CH05_Webdriver_Java_3 ---
+[INFO] org.example:CH05_Webdriver_Java_3:jar:1.0-SNAPSHOT
+[INFO] +- org.seleniumhq.selenium:selenium-java:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-api:jar:4.25.0:compile
+[INFO] |  |  \- org.jspecify:jspecify:jar:1.0.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-chrome-driver:jar:4.25.0:compile
+[INFO] |  |  +- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-chromium-driver:jar:4.25.0:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-json:jar:4.25.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-manager:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v127:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v128:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v129:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v85:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-edge-driver:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-firefox-driver:jar:4.25.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-http:jar:4.25.0:compile
+[INFO] |  |     \- dev.failsafe:failsafe:jar:3.3.2:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-ie-driver:jar:4.25.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-remote-driver:jar:4.25.0:compile
+[INFO] |  |  +- com.google.guava:guava:jar:33.3.0-jre:compile
+[INFO] |  |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  |  +- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  |  |  \- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |  |  +- io.opentelemetry.semconv:opentelemetry-semconv:jar:1.25.0-alpha:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-api:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-context:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-exporter-logging:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-common:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:jar:1.42.1:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-api-incubator:jar:1.42.1-alpha:runtime
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-trace:jar:1.42.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk:jar:1.42.1:compile
+[INFO] |  |  |  +- io.opentelemetry:opentelemetry-sdk-metrics:jar:1.42.1:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-sdk-logs:jar:1.42.1:compile
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.15.1:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-os:jar:4.25.0:compile
+[INFO] |  |     \- org.apache.commons:commons-exec:jar:1.4.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-safari-driver:jar:4.25.0:compile
+[INFO] |  \- org.seleniumhq.selenium:selenium-support:jar:4.25.0:compile
+[INFO] +- org.seleniumhq.selenium:selenium-server:jar:4.25.0:compile
+[INFO] +- org.testng:testng:jar:7.9.0:test
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- com.beust:jcommander:jar:1.82:test
+[INFO] |  \- org.webjars:jquery:jar:3.7.1:test
+[INFO] +- org.junit.jupiter:junit-jupiter:jar:5.10.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter-api:jar:5.10.2:test
+[INFO] |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  \- org.junit.platform:junit-platform-commons:jar:1.10.2:test
+[INFO] |  \- org.junit.jupiter:junit-jupiter-params:jar:5.10.2:test
+[INFO] +- org.junit.jupiter:junit-jupiter-engine:jar:5.10.2:test
+[INFO] |  +- org.junit.platform:junit-platform-engine:jar:1.10.2:test
+[INFO] |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.5.12:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.5.12:compile
+[INFO] +- org.apache.logging.log4j:log4j-core:jar:2.25.3:compile
+[INFO] |  \- org.apache.logging.log4j:log4j-api:jar:2.25.3:compile
+[INFO] +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.17.2:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.17.2:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.17.2:compile
+[INFO] +- org.apache.poi:poi:jar:5.4.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.6.1:compile
+[INFO] |  +- commons-io:commons-io:jar:2.18.0:compile
+[INFO] |  \- com.zaxxer:SparseBitSet:jar:1.3:compile
+[INFO] +- org.apache.poi:poi-ooxml:jar:5.4.0:compile
+[INFO] |  +- org.apache.poi:poi-ooxml-lite:jar:5.4.0:compile
+[INFO] |  +- org.apache.xmlbeans:xmlbeans:jar:5.3.0:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.27.1:compile
+[INFO] |  |  \- org.apache.commons:commons-lang3:jar:3.16.0:compile
+[INFO] |  \- com.github.virtuald:curvesapi:jar:1.08:compile
+[INFO] \- org.apache.poi:poi-ooxml-schemas:jar:4.1.2:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.090 s
+[INFO] Finished at: 2026-02-02T14:56:57-05:00
+[INFO] ------------------------------------------------------------------------
+2026-02-02T19:56:57.751Z [INFO] [MavenBuildTool] Successfully got dependency tree of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T19:56:57.752Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver from pom.xml
+2026-02-02T19:56:57.752Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver
+2026-02-02T19:56:57.753Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\pom.xml
+2026-02-02T19:56:57.754Z [INFO] [MavenBuildTool] Java version found in c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver\pom.xml: 17
+2026-02-02T19:56:57.755Z [INFO] validateAndUpdateTargets, targets: [object Object]
+2026-02-02T19:56:57.755Z [WARN] No source dependencies found for Spring Boot. Skipping target dependency validation
+2026-02-02T19:56:57.755Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Boot
+2026-02-02T19:56:57.756Z [WARN] No source dependencies found for Spring Framework. Skipping target dependency validation
+2026-02-02T19:56:57.756Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Framework
+2026-02-02T19:56:57.756Z [WARN] No source dependencies found for Spring Security. Skipping target dependency validation
+2026-02-02T19:56:57.757Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Security
+2026-02-02T19:56:57.757Z [WARN] No source dependencies found for Jakarta EE. Skipping target dependency validation
+2026-02-02T19:56:57.758Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Jakarta EE
+2026-02-02T19:56:57.758Z [WARN] Upgrading project with JUnit 5.10.2 is not supported.
+2026-02-02T19:56:57.759Z [INFO] validateAndUpdateTargets, targets: [object Object], group:JUnit
+2026-02-02T19:56:57.759Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Java
+2026-02-02T19:56:57.760Z [INFO] validateAndUpdateTargets, userTargets: [object Object]
+2026-02-02T19:56:57.760Z [INFO] Target Java version: 21
+2026-02-02T19:56:57.761Z [INFO] [Environment] Running command (Java 21): java -version
+openjdk version "21.0.8" 2025-07-15 LTS
+OpenJDK Runtime Environment Microsoft-11933218 (build 21.0.8+9-LTS)
+OpenJDK 64-Bit Server VM Microsoft-11933218 (build 21.0.8+9-LTS, mixed mode, sharing)
+2026-02-02T19:56:57.911Z [INFO] [JdkEnvironment] Got real Java version: 21.0.8
+2026-02-02T19:56:57.911Z [INFO] Target JDK: {"name":"java","path":"C:\\Users\\GB-TECH\\.jdk\\jdk-21.0.8\\bin","version":"21"}
+2026-02-02T19:56:57.912Z [INFO] Upgrade options: {
+  "workingBranch": "appmod/java-upgrade-20260202194845",
+  "runTests": true,
+  "target": {
+    "javaVersion": "21",
+    "dependencies": [
+      {
+        "name": "Java",
+        "groupId": "java",
+        "artifactId": "*",
+        "version": "21",
+        "recipes": [
+          {
+            "id": "com.microsoft.java.UpgradeToJava21",
+            "name": "Upgrade from Java 8 to Java 21",
+            "description": "Migrate Java 8 to Java 21.",
+            "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava21",
+            "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava21` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 21 from any previous version larger than Java 8.\n"
+          }
+        ],
+        "supportedSources": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": ">=8 <21"
+          },
+          {
+            "name": "Java",
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "11",
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToJava11",
+                "name": "Upgrade from Java 8 to Java 11",
+                "description": "Migrate Java 8 to Java 11.",
+                "url": "https://docs.openrewrite.org/recipes/java/migrate/java8tojava11",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.Java8toJava11` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 11 from any previous version larger than Java 8.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <11"
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "11"
+              }
+            ]
+          },
+          {
+            "name": "Java",
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "17",
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToJava17",
+                "name": "Upgrade from Java 8 to Java 17",
+                "description": "Migrate Java 8 to Java 17.",
+                "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava17",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava17` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 17 from any previous version larger than Java 8.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <17"
+              },
+              {
+                "name": "Java",
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "11",
+                "recipes": [
+                  {
+                    "id": "com.microsoft.java.UpgradeToJava11",
+                    "name": "Upgrade from Java 8 to Java 11",
+                    "description": "Migrate Java 8 to Java 11.",
+                    "url": "https://docs.openrewrite.org/recipes/java/migrate/java8tojava11",
+                    "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.Java8toJava11` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 11 from any previous version larger than Java 8.\n"
+                  }
+                ],
+                "supportedSources": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": ">=8 <11"
+                  }
+                ],
+                "effects": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": "11"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "17"
+              }
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "21"
+          }
+        ]
+      }
+    ],
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Users\\GB-TECH\\.jdk\\jdk-21.0.8\\bin",
+      "version": "21"
+    }
+  },
+  "guidelines": ""
+}
+2026-02-02T19:56:57.912Z [INFO] Project configuration and upgrade options initialized successfully.
+2026-02-02T19:56:58.008Z [INFO] ?? AlfrescoScriptsCucumber/
+
+2026-02-02T19:56:58.239Z [INFO] No local changes to save
+
+2026-02-02T19:56:58.347Z [INFO] ?? AlfrescoScriptsCucumber/
+
+2026-02-02T19:56:58.358Z [INFO] There are ?? AlfrescoScriptsCucumber/ changed files found under "c:\Users\GB-TECH\Downloads\20251016232705_TPFinal (1)\TPFinal\AlfrescoScriptsWbdriver"
